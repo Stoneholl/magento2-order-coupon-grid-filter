@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="stoneholl" translate="label" sortOrder="850">
+            <label>Stoneholl</label>
+        </tab>
+        <section id="stoneholl_order_coupon_grid_filter"
+                 translate="label"
+                 type="text"
+                 sortOrder="30"
+                 showInDefault="1"
+                 showInWebsite="0"
+                 showInStore="0">
+            <label>Order Coupon Grid Filter</label>
+            <tab>stoneholl</tab>
+            <resource>Stoneholl_OrderCouponGridFilter::config</resource>
+            <group id="features"
+                   translate="label comment"
+                   type="text"
+                   sortOrder="10"
+                   showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <label>Order Grid Features</label>
+                <comment>Choose which coupon and discount tools are available in the Admin order grid.</comment>
+                <field id="coupon_code"
+                       translate="label comment"
+                       type="select"
+                       sortOrder="10"
+                       showInDefault="1"
+                       showInWebsite="0"
+                       showInStore="0"
+                       canRestore="1">
+                    <label>Enable Coupon Code Column and Filter</label>
+                    <comment>
+                        Add the hidden Coupon Code column to Columns and allow text filtering by coupon code.
+                    </comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="coupon_used"
+                       translate="label comment"
+                       type="select"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="0"
+                       showInStore="0"
+                       canRestore="1">
+                    <label>Enable Coupon Used Filter</label>
+                    <comment>Add the independent Coupon Used: Yes / No filter to the order grid.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="discount_amount"
+                       translate="label comment"
+                       type="select"
+                       sortOrder="30"
+                       showInDefault="1"
+                       showInWebsite="0"
+                       showInStore="0"
+                       canRestore="1">
+                    <label>Enable Discount Amount Column</label>
+                    <comment>
+                        Add the hidden Discount Amount (Purchased) column to Columns using each order's currency.
+                    </comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

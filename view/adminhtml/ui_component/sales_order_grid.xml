@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <filters name="listing_filters">
+            <filterSelect name="coupon_used"
+                          class="Stoneholl\OrderCouponGridFilter\Ui\Component\Filter\CouponUsed"
+                          provider="${ $.parentName }"
+                          sortOrder="25">
+                <settings>
+                    <options class="Stoneholl\OrderCouponGridFilter\Model\Source\CouponUsed"/>
+                    <caption translate="true">Select...</caption>
+                    <label translate="true">Coupon Used</label>
+                    <dataScope>coupon_used</dataScope>
+                </settings>
+            </filterSelect>
+        </filters>
+    </listingToolbar>
+    <columns name="sales_order_columns">
+        <column name="coupon_code"
+                class="Stoneholl\OrderCouponGridFilter\Ui\Component\Listing\Column\CouponCode"
+                sortOrder="65">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Coupon Code</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="discount_amount"
+                class="Stoneholl\OrderCouponGridFilter\Ui\Component\Listing\Column\DiscountAmount"
+                sortOrder="75">
+            <settings>
+                <label translate="true">Discount Amount (Purchased)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+    </columns>
+</listing>

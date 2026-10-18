@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <stoneholl_order_coupon_grid_filter>
+            <features>
+                <coupon_code>1</coupon_code>
+                <coupon_used>1</coupon_used>
+                <discount_amount>1</discount_amount>
+            </features>
+        </stoneholl_order_coupon_grid_filter>
+    </default>
+</config>
