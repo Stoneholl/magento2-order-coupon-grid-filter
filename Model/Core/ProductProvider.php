@@ -18,7 +18,7 @@ class ProductProvider implements ProductProviderInterface
             'order-coupon-grid-filter',
             'Stoneholl Order Coupon Grid Filter',
             ['Stoneholl_OrderCouponGridFilter'],
-            ['stoneholl/module-order-coupon-grid-filter']
+            ['stoneholl/magento2-order-coupon-grid-filter']
         )];
     }
 }

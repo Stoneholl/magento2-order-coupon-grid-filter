@@ -1,5 +1,5 @@
 {
-    "name": "stoneholl/module-order-coupon-grid-filter",
+    "name": "stoneholl/magento2-order-coupon-grid-filter",
     "description": "Coupon code, coupon usage, and discount amount fields for the Magento Open Source order grid.",
     "type": "magento2-module",
     "license": "MIT",
@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "~7.4.0||~8.0.0||~8.1.0||~8.2.0||~8.3.0||~8.4.0||~8.5.0",
-        "stoneholl/module-core": "^1.0",
+        "stoneholl/magento2-core": "^1.0.1",
         "magento/framework": "102.0.*||103.0.*",
         "magento/module-config": "101.1.*||101.2.*",
         "magento/module-sales": "102.0.*||103.0.*",
@@ -29,5 +29,8 @@
         "psr-4": {
             "Stoneholl\\OrderCouponGridFilter\\": ""
         }
+    },
+    "replace": {
+        "stoneholl/module-order-coupon-grid-filter": "self.version"
     }
 }

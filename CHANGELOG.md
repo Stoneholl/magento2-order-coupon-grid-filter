@@ -1,5 +1,12 @@
 # Changelog
 
+
+## 1.0.1 - 2026-10-23
+
+- Rename the Composer package to `stoneholl/magento2-order-coupon-grid-filter` and replace its corresponding legacy `stoneholl/module-order-coupon-grid-filter` identity at `self.version`.
+- Require the canonical Core package from version 1.0.1 and update installation/migration documentation.
+- Keep Magento module identifiers, configuration, storage and licensing unchanged.
+
 ## 1.0.0
 
 - Remove disabled coupon/discount components from server-side order-grid traversal so they cannot format missing
